@@ -6,8 +6,11 @@
 	<title></title>
 </head>
 <body>
-<h1>Write your name, age, and a message!</h1>
-<br>
+	{%for i in tweets%}
+	<h1>{{tweets[i]['title']}}</h1>
+	{% endfor %}
+<!-- <h1>Write your name, age, and a message!</h1>
+ --><br>
 
 </body>
 </html>
